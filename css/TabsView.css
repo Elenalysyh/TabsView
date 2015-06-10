@@ -1,0 +1,48 @@
+		#makeNewTab {
+			position: absolute;
+			right: 10px;
+			margin-top: -40px;
+		}
+		.noView {
+			display: none;
+		}
+
+		#wrapperNavUl {
+			background: #eee;
+			height: 50px;
+		}
+		#wrapperNavUl li {
+			background: #ddd;
+
+		}
+		.content {
+			padding: 10px;
+		}
+		.textareaZone {
+			height: 200px;
+			width: 100%;
+		}
+		.tab-title {
+			min-width: 100px;
+			border-right: 1px solid #bbb;
+			border-radius: 7px;
+		}
+
+		.closeTag {
+			position: absolute;
+			padding: 1px;
+			border: 1px solid #bbb;
+			border-radius: 50%;
+		}
+		
+		.inputZone {
+			min-width: 70px;
+			margin-right: 5px;
+		}
+		.contentElemOfTab {
+			min-height: 200px;
+			width: 80%;
+		}
+		
+
+

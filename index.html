@@ -1,0 +1,70 @@
+<!doctype html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>TabsView</title>	
+	<link rel="stylesheet" href="css/bootstrap.min.css">
+	<link rel="stylesheet" href="css/TabsView.css">
+	<script src="js/TabsView.js"></script>
+</head>
+<body>
+	<div id="Here1">
+		
+	</div>
+	<div id="Here2">
+		
+	</div>
+	<script>
+
+
+	(function () {
+		var setOfTabs1= [{ 
+			title : "Вкладка 0",
+			descriptionTab : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+		}, { 
+			title : "Вкладка 1", 
+			descriptionTab : "Sed ut perspiciatis, unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est", 
+		}, { 
+			title : "Вкладка 2",
+			descriptionTab : "Qui dolorem ipsum, quia dolor sit, amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+		},	{
+			title : "Вкладка 3",
+			descriptionTab : "Quis autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+		}, {
+			title : "Вкладка 4",
+			descriptionTab : "Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+		} ] ;
+			window.tabsView1 = new TabsView(document.getElementById("Here1"), {tabs: setOfTabs1});
+	}());
+	
+
+	(function () {
+
+		var setOfTabs2= [{ 
+			title : "Вкладка 0",
+			descriptionTab : "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum",
+		}, { 
+			title : "Вкладка 1", 
+			descriptionTab : "Totam rem aperiam eaque ipsa, quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt, explicabo. Nemo enim ipsam voluptatem, quia voluptas sit, aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos, qui ratione voluptatem sequi nesciunt, neque porro quisquam est", 
+		}, { 
+			title : "Вкладка 2",
+			descriptionTab : "Consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt, ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur?",
+		},	{
+			title : "Вкладка 3",
+			descriptionTab : "Autem vel eum iure reprehenderit, qui in ea voluptate velit esse, quam nihil molestiae consequatur, vel illum, qui dolorem eum fugiat, quo voluptas nulla pariatur? At vero eos et accusamus et iusto odio dignissimos ducimus, qui blanditiis praesentium voluptatum deleniti atque corrupti, quos dolores et quas molestias excepturi sint, obcaecati cupiditate non provident, similique sunt in culpa, qui officia deserunt mollitia animi, id est laborum et dolorum fuga.",
+		}, {
+			title : "Вкладка 4",
+			descriptionTab : "Quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio, cumque nihil impedit, quo minus id, quod maxime placeat, facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet, ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.",
+		}] ;
+		
+			window.tabsView2 = new TabsView(document.getElementById("Here2"), {tabs: setOfTabs2});
+				console.log(tabsView2.getTabsData());
+				tabsView2.setTitle("idTab1", "Good");
+				tabsView2.setDescription("idTab2", "Why do you cry, Willy? Why do you cry? Why, Willy? Why, Willy? Why, Willy? Why?");
+				tabsView2.setTabData("idTab3", {title:"Lemon Tree", description: "I'm sitting here in the boring room It's just another rainy Sunday fternoon I'm wasting my time I got nothing to do I'm hanging around I'm waiting for you But nothing ever happens and I wonder I'm driving around in my car I'm driving too fast I'm driving too far I'd like to change my point of view I feel so lonely I'm waiting for you But nothing ever happens and I wonder I wonder how I wonder why Yesterday you told me 'bout the blue blue sky And all that I can see is just a yellow lemon-tree I'm turning my head up and down I'm turning turning turning turning turning around And all that I can see is just another lemon-tree " });
+	}());
+
+
+	</script>
+</body>
+</html>
